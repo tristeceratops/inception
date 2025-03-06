@@ -50,13 +50,13 @@ volumes:
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/ewoillar/login/data/wordpress'
+      device: '/home/ewoillar/data/wordpress'
   mariadb:
     driver: local
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/ewoillar/login/data/mariadb'
+      device: '/home/ewoillar/data/mariadb'
 
 networks:
   inception:

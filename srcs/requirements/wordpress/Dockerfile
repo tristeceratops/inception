@@ -13,7 +13,7 @@ RUN mv wp-cli.phar /usr/local/bin/wp
 #EXPOSE 8080
 COPY auto_config.sh /conf/auto_config.sh
 #USER www-data
-#ENTRYPOINT ["sh", "/conf/auto_config.sh"]
+ENTRYPOINT ["sh", "/conf/auto_config.sh"]
 RUN mkdir -p /run/php
 RUN cd /usr/bin
-RUN php-fpm7.3 -F
+CMD php-fpm7.4 -F
