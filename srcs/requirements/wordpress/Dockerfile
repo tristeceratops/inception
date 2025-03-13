@@ -25,5 +25,6 @@ RUN mkdir -p /run/php
 COPY auto_config.sh /conf/auto_config.sh
 RUN chmod +x /conf/auto_config.sh
 #USER www-data
+WORKDIR /var/www/html/wordpress
 ENTRYPOINT ["sh", "/conf/auto_config.sh"]
 #CMD ["exec", "/usr/sbin/php-fpm7.4", "-F"]

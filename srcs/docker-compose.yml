@@ -22,6 +22,7 @@ services:
     - inception
     depends_on:
     - wordpress
+    - mariadb
     build:
       context: requirements/nginx
       dockerfile: Dockerfile
