@@ -1,0 +1,11 @@
+SQL_DATABASE="website"
+SQL_USER="ewoillar"
+SQL_PASSWORD="1234"
+SQL_ROOT_PASSWORD="r1234"
+ADMIN_USER="ewoillar"
+ADMIN_PASSWORD="adm1234"
+ADMIN_EMAIL="ewoillar@student.42luxembourg.lu"
+USER_LOGIN="pibernar"
+USER_EMAIL="test@student.42luxembourg.lu"
+USER="ewoillar"
+
