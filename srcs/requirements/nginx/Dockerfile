@@ -13,6 +13,6 @@ RUN mkdir -p /var/www/html
 RUN chmod 755 /var/www/html
 RUN chown -R www-data:www-data /var/www/html
 RUN mv /var/www/html/index.nginx-debian.html /var/www/html/index.html
-RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
+#RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 CMD [ "nginx", "-g", "daemon off;" ]
 EXPOSE 443
